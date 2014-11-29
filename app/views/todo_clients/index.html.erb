@@ -1,0 +1,27 @@
+<h1>Listing todo_clients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_clients.each do |todo_client| %>
+      <tr>
+        <td><%= todo_client.title %></td>
+        <td><%= todo_client.notes %></td>
+        <td><%= link_to 'Show', todo_client %></td>
+        <td><%= link_to 'Edit', edit_todo_client_path(todo_client) %></td>
+        <td><%= link_to 'Destroy', todo_client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todo client', new_todo_client_path %>

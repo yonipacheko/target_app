@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @todo_client.title %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @todo_client.notes %>
+</p>
+
+<%= link_to 'Edit', edit_todo_client_path(@todo_client) %> |
+<%= link_to 'Back', todo_clients_path %>
