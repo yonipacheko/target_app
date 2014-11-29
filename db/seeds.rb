@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+TodoClient.create(title: "Wash dishes")
+TodoClient.create(title: "Visit dentist on Monday", notes: "Scheduled time is 9am.")
+TodoClient.create(title: "Call bank about transfer", notes: "It's been  3 days and transfer hasn't been done.")
+TodoClient.create(title: "Watch football", notes: "If we lose again, the manager might get sacked!")
+TodoClient.create(title: "Register for new Tealeaf course")
